@@ -1,0 +1,137 @@
+ /**
+    * @package SP VirtueMart Category Menu
+    * @author JoomShaper http://www.joomshaper.com
+    * @copyright Copyright (c) 2010 - 2013 JoomShaper
+    * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
+    */   
+.sp-vmmenu > ul{
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.sp-vmmenu ul li{
+	
+}
+
+.sp-vmmenu ul li a{
+	color:#444;
+}
+
+.sp-vmmenu > ul > li{
+	position: relative;
+	margin: 0;
+	display: block;
+	border-bottom: 1px dashed #DBDBDB;
+}
+.sp-vmmenu > ul > li:last-child{
+	position: relative;
+	margin: 0;
+	display: block;
+	border-bottom: none !important;
+}
+
+.sp-vmmenu > ul > li > a{
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+}
+
+.sp-vmmenu > ul > li.parent{
+	position: relative;
+}
+
+.sp-vmmenu > ul > li.parent:hover::after{
+	content: ' ';
+	position: absolute;
+	display: block;
+	right: -20px;
+	top: 10px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent transparent #f9f9f9;
+	z-index: 1003;
+
+}
+
+.sp-vmmenu > ul > li.parent:hover::before{
+	content: '';
+	position: absolute;
+	display: block;
+	right: -22px;
+	top: 9px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 11px;
+	border-color: transparent transparent transparent #ccc;
+	z-index: 1000;
+
+}
+
+.sp-vmmenu > ul ul{
+	list-style: none;
+	margin: 0;
+}
+
+.sp-vmmenu > ul > li > ul{
+	list-style: none;
+	visibility: hidden;
+	opacity: 0;
+	padding: 15px;
+	margin: 0;
+	background: #fff;
+	border:1px solid #dbdbdb;
+	left: 268px;
+	position: absolute;
+	top:0;	
+}
+
+.sp-vmmenu > ul > li:hover > ul{
+	visibility: visible;
+	opacity: 1;
+	z-index: 999;
+}
+.sp-vmmenu > ul > li > ul >li.sp-vmcategorymenu-module-wrapper{
+	clear: both;
+	float: none;
+	width:auto;
+}
+
+.sp-vmmenu > ul > li > ul >li.sp-vmcategorymenu-module-wrapper img{
+	margin: 15px 0 0;	
+}
+
+.sp-vmmenu > ul > li > ul >li{
+	float: left;
+	width: 140px;
+
+}
+.sp-vmmenu > ul > li > ul >li h4{
+	font-weight: bold;
+	margin-top: 0;
+
+}
+
+.sp-vmmenu > ul > li > ul > li ul{
+	margin: 0;
+}
+
+.sp-vmcol-1{
+	width:140px;
+}
+
+.sp-vmcol-2{
+	width:280px;
+}
+
+.sp-vmcol-3{
+	width:420px;
+}
+
+.sp-vmcol-4{
+	width:560px;
+}
